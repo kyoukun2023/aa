@@ -27,6 +27,7 @@
 			<td aligin="center">学生変更画面</td>
 			<td aligin="center">授業科目変更・削除画面</td>
 		</tr>
+
 	</table>
 </body>
 </html>
