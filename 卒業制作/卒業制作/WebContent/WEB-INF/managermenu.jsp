@@ -8,5 +8,11 @@
 </head>
 <body>
 	<h1>管理者メニュー画面</h1>
+		<tr>
+			<th>教員</th>
+			<th>担当</th>
+			<th>学生</th>
+			<th>授業科目/クラス</th>
+		</tr>
 </body>
 </html>
