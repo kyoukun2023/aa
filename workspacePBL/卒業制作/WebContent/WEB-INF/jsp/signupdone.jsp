@@ -8,6 +8,7 @@
 </head>
 <body>
   <h1>新規登録完了画面</h1>
+
     <p>登録完了しました</p>
     <br>
     <a href="/WEB-INF/jsp/index.jsp">ログイン画面へ</a>
