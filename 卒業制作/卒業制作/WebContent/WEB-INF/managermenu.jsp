@@ -14,5 +14,17 @@
 			<th>学生</th>
 			<th>授業科目/クラス</th>
 		</tr>
+		<tr>
+			<td aligin="center">教員登録画面</td>
+			<td aligin="center">担当科目管理画面</td>
+			<td aligin="center">学生登録画面</td>
+			<td aligin="center">授業科目登録画面</td>
+		</tr>
+		<tr>
+			<td aligin="center">教員変更画面</td>
+			<td aligin="center"></td>
+			<td aligin="center">学生変更画面</td>
+			<td aligin="center">授業科目変更・削除画面</td>
+		</tr>
 </body>
 </html>
