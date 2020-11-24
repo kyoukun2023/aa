@@ -43,7 +43,7 @@
 			<td></td>
 			<td></td>
 			<td>進級・卒業対応メニュー画面</td>
-			<td a href="/example/ParaSampleServlet?btn=rink">学科変更・削除画面</td>
+			<td>学科変更・削除画面</td>
 		</tr>
 	</table>
 
