@@ -16,34 +16,34 @@
 			<th>授業科目/クラス</th>
 		</tr>
 		<tr>
-			<td aligin="center">教員登録画面</td>
-			<td aligin="center">担当科目管理画面</td>
-			<td aligin="center">学生登録画面</td>
-			<td aligin="center">授業科目登録画面</td>
+			<td>教員登録画面</td>
+			<td>担当科目管理画面</td>
+			<td>学生登録画面</td>
+			<td>授業科目登録画面</td>
 		</tr>
 		<tr>
-			<td aligin="center">教員変更画面</td>
-			<td aligin="center"></td>
-			<td aligin="center">学生変更画面</td>
-			<td aligin="center">授業科目変更・削除画面</td>
+			<td>教員変更画面</td>
+			<td></td>
+			<td>学生変更画面</td>
+			<td>授業科目変更・削除画面</td>
 		</tr>
 		<tr>
-			<td aligin="center">教員削除画面</td>
-			<td aligin="center"></td>
-			<td aligin="center">学生削除画面</td>
-			<td aligin="center">授業科目一括登録画面</td>
+			<td>教員削除画面</td>
+			<td></td>
+			<td>学生削除画面</td>
+			<td>授業科目一括登録画面</td>
 		</tr>
 		<tr>
-			<td aligin="center"></td>
-			<td aligin="center"></td>
-			<td aligin="center">学生一括登録画面</td>
-			<td aligin="center">学科登録画面</td>
+			<td></td>
+			<td></td>
+			<td>学生一括登録画面</td>
+			<td>学科登録画面</td>
 		</tr>
 		<tr>
-			<td aligin="center"></td>
-			<td aligin="center"></td>
-			<td aligin="center">進級・卒業対応メニュー画面</td>
-			<td aligin="center">学科変更・削除画面</td>
+			<td></td>
+			<td></td>
+			<td>進級・卒業対応メニュー画面</td>
+			<td a href="/example/ParaSampleServlet?btn=rink">学科変更・削除画面</td>
 		</tr>
 	</table>
 
