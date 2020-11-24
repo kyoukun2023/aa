@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>管理者メニュー画面</h1>
-	<table>
+	<table border="1">
 		<tr>
 			<th>教員</th>
 			<th>担当</th>
