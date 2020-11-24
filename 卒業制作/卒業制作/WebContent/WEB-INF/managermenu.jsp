@@ -8,6 +8,7 @@
 </head>
 <body>
 	<h1>管理者メニュー画面</h1>
+	<table>
 		<tr>
 			<th>教員</th>
 			<th>担当</th>
@@ -26,5 +27,6 @@
 			<td aligin="center">学生変更画面</td>
 			<td aligin="center">授業科目変更・削除画面</td>
 		</tr>
+	</table>
 </body>
 </html>
