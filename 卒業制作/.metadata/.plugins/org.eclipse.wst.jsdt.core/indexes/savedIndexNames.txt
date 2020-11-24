@@ -1,8 +1,5 @@
-INDEX VERSION 1.4+C:\Users\ntb017\Desktop\ë≤ã∆êßçÏ\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1919637342.index
-3513645110.index
-4155932824.index
-3720361356.index
-2059226670.index
-3040853365.index
-92816945.index
+INDEX VERSION 1.4+C:\Users\ntb017\git\aa\ë≤ã∆êßçÏ\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4202988058.index
+4218264124.index
+3537250360.index
+3741743375.index
