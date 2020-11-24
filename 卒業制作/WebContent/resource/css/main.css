@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.box{
+      width:500px; border: solid 2px #000;
+      background-color:#f0f8ff;
+
+}
+h1{
+	 text-align: center;
+    text-decoration: underline black;
+}
+body{
+	  background-color:"red";
+      text-align: center;
+       margin-right: auto;
+      margin-left : auto;
+
+  }
