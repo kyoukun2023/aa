@@ -27,7 +27,25 @@
 			<td aligin="center">学生変更画面</td>
 			<td aligin="center">授業科目変更・削除画面</td>
 		</tr>
-
+		<tr>
+			<td aligin="center">教員削除画面</td>
+			<td aligin="center"></td>
+			<td aligin="center">学生削除画面</td>
+			<td aligin="center">授業科目一括登録画面</td>
+		</tr>
+		<tr>
+			<td aligin="center"></td>
+			<td aligin="center"></td>
+			<td aligin="center">学生一括登録画面</td>
+			<td aligin="center">学科登録画面</td>
+		</tr>
+		<tr>
+			<td aligin="center"></td>
+			<td aligin="center"></td>
+			<td aligin="center">進級・卒業対応メニュー画面</td>
+			<td aligin="center">学科変更・削除画面</td>
+		</tr>
 	</table>
+
 </body>
 </html>
