@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;}
+table{
+   border: 2px solid black;
+   width: 650px;
+   height: 100px;
+   padding: 4px;
+   font-size: 15px;
+   margin: 20px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+div{
+   width: 700px;
+}
+
+p#error{
+   display: none;
+   text-align: center;
+}
