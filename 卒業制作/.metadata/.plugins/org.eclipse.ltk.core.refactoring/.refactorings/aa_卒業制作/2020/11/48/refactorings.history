@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="&apos;managerMenu.jsp&apos; を &apos;WebContent&apos; に移動" description="&apos;managerMenu.jsp&apos; を &apos;WebContent&apos; に移動" destination="卒業制作/WebContent" element1="/卒業制作/WebContent/managerMenu.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1606200936667" updateReferences="true"/>
-</session>
