@@ -46,6 +46,6 @@
 			<td>学科変更・削除画面</td>
 		</tr>
 	</table>
-	<input type="button" value="ログアウト" align="right">
+	<input type="button" value="ログアウト">
 </body>
 </html>
