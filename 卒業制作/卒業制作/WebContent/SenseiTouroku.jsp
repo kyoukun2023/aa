@@ -8,7 +8,22 @@
 </head>
 <body>
 	<h1>教員登録画面</h1>
-		<h6>IDを入力してください</h6>
-
+		<h4>IDを入力してください</h4>
+		<table>
+		<tr>
+			<td>　　　ＩＤ<input type="text" name="ID"></td>
+		</tr>
+		<tr>
+			<td>教員名<input type="text" name="sensei"></td>
+			</tr>
+		</table>
+	<p>
+		<input type="checkbox" name="riyu" value="1" checked="checked">教員
+		<input type="checkbox" name="riyu" value="2">AD
+		<input type="checkbox" name="riyu" value="3">教員/AD
+		<input type="checkbox" name="riyu" value="3">管理者
+	</p>
+	<input type="button" value="戻る">
+	<input type="button" value="登録">
 </body>
 </html>

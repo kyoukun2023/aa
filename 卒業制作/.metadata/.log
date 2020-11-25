@@ -2477,3 +2477,269 @@ java.io.IOException: プロセスはファイルにアクセスできません�
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:234)
 	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3139)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-25 10:00:41.113
+!MESSAGE プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+!STACK 0
+java.io.IOException: プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:139)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:120)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:234)
+	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-25 10:22:51.818
+!MESSAGE プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+!STACK 0
+java.io.IOException: プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:139)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:120)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:234)
+	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-25 10:30:35.317
+!MESSAGE プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+!STACK 0
+java.io.IOException: プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:139)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:120)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:234)
+	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2020-11-25 10:30:44.137
+!MESSAGE インストールする項目の収集中にエラーが発生しました
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2020-11-25 10:30:44.137
+!MESSAGE セッション・コンテキスト:(プロファイル=epp.package.jee、フェーズ=org.eclipse.equinox.internal.p2.engine.phases.Collect、オペランド=、アクション=)。
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-11-25 10:30:44.137
+!MESSAGE 含まれているリポジトリーが見つかりません: osgi.bundle,ch.qos.logback.classic,1.1.2.v20160208-0839
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-11-25 10:30:44.137
+!MESSAGE 含まれているリポジトリーが見つかりません: osgi.bundle,ch.qos.logback.core,1.1.2.v20160208-0839
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-11-25 10:30:44.137
+!MESSAGE 含まれているリポジトリーが見つかりません: osgi.bundle,ch.qos.logback.slf4j,1.1.2.v20160301-0943
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-11-25 10:30:44.137
+!MESSAGE 含まれているリポジトリーが見つかりません: osgi.bundle,com.google.inject,3.0.0.v201605172100
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-11-25 10:30:44.137
+!MESSAGE 含まれているリポジトリーが見つかりません: osgi.bundle,com.google.inject.multibindings,3.0.0.v201605172100
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-11-25 10:30:44.137
+!MESSAGE 含まれているリポジトリーが見つかりません: osgi.bundle,org.apache.ws.commons.util,1.0.2.v20160817-1930
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2020-11-25 10:30:44.137
+!MESSAGE 含まれているリポジトリーが見つかりません: osgi.bundle,org.slf4j.api,1.7.10.v20170428-1633
+!SESSION 2020-11-25 13:17:59.054 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-25 13:18:13.029
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-25 13:18:13.030
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-25 13:18:13.505
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-25 13:18:13.505
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-25 13:18:15.417
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-25 13:18:15.417
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@44233014,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6888a33,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-25 13:18:22.836
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-25 13:18:28.159
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-25 13:20:27.312
+!MESSAGE プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+!STACK 0
+java.io.IOException: プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:139)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:120)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:234)
+	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-25 13:20:29.313
+!MESSAGE プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+!STACK 0
+java.io.IOException: プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:139)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:120)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:234)
+	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-25 13:21:00.566
+!MESSAGE 内部エラーが発生しました
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of commit command
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:324)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:240)
+	at org.eclipse.egit.core.op.CommitOperation.access$5(CommitOperation.java:230)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:192)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:201)
+	at org.eclipse.egit.ui.internal.commit.CommitJob.run(CommitJob.java:101)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.io.IOException: プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:139)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:120)
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:426)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:237)
+	... 8 more
+!SESSION 2020-11-25 13:21:28.434 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-25 13:21:32.106
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-25 13:21:32.106
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-25 13:21:32.519
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-25 13:21:32.519
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-25 13:21:34.314
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-25 13:21:34.314
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5e6ad84c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4117e0c9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-25 13:21:36.806
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-25 13:21:44.821
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-25 13:24:30.658
+!MESSAGE プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+!STACK 0
+java.io.IOException: プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:139)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:120)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:234)
+	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-25 13:24:46.305
+!MESSAGE プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+!STACK 0
+java.io.IOException: プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:139)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:120)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:234)
+	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-25 13:24:48.338
+!MESSAGE プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+!STACK 0
+java.io.IOException: プロセスはファイルにアクセスできません。別のプロセスがファイルの一部をロックしています。
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:139)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:120)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:234)
+	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3139)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
