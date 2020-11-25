@@ -418,7 +418,487 @@ java.lang.IllegalArgumentException: timeout value is negative
 
 !ENTRY org.eclipse.jface.text 2 0 2020-11-24 13:15:37.325
 !MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
-!SESSION 2020-11-24 16:02:51.471 -----------------------------------------------
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2020-11-24 13:21:27.749
+!MESSAGE org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport@1cf62dc6 を使用したストリームに失敗しました - org.eclipse.epp.internal.mpc.core.util.TransportFactory$1@11cbb07b に切り替えます: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:117)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:163)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:115)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:509)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:535)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:282)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:297)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:279)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:72)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.net.UnknownHostException: 縺薙ｌ縺ｯ騾壼ｸｸ縲√�帙せ繝亥錐縺ｮ隗｣豎ｺ荳ｭ縺ｮ荳�譎ら噪縺ｪ繧ｨ繝ｩ繝ｼ縺ｧ縲√Ο繝ｼ繧ｫ繝ｫ 繧ｵ繝ｼ繝舌�ｼ縺梧ｨｩ髯舌ｒ謖√▲縺ｦ縺�繧九し繝ｼ繝舌�ｼ縺九ｉ蠢懃ｭ斐ｒ蜿嶺ｿ｡縺励↑縺九▲縺溘％縺ｨ繧呈э蜻ｳ縺励∪縺吶�� (marketplace.eclipse.org)
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:92)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:95)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:54)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	... 13 more
+Contains: Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+java.net.UnknownHostException: 縺薙ｌ縺ｯ騾壼ｸｸ縲√�帙せ繝亥錐縺ｮ隗｣豎ｺ荳ｭ縺ｮ荳�譎ら噪縺ｪ繧ｨ繝ｩ繝ｼ縺ｧ縲√Ο繝ｼ繧ｫ繝ｫ 繧ｵ繝ｼ繝舌�ｼ縺梧ｨｩ髯舌ｒ謖√▲縺ｦ縺�繧九し繝ｼ繝舌�ｼ縺九ｉ蠢懃ｭ斐ｒ蜿嶺ｿ｡縺励↑縺九▲縺溘％縺ｨ繧呈э蜻ｳ縺励∪縺吶�� (marketplace.eclipse.org)
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:92)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:95)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:54)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:163)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:115)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:509)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:535)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:282)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:297)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:279)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:72)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2020-11-24 13:21:27.750
+!MESSAGE Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+java.net.UnknownHostException: 縺薙ｌ縺ｯ騾壼ｸｸ縲√�帙せ繝亥錐縺ｮ隗｣豎ｺ荳ｭ縺ｮ荳�譎ら噪縺ｪ繧ｨ繝ｩ繝ｼ縺ｧ縲√Ο繝ｼ繧ｫ繝ｫ 繧ｵ繝ｼ繝舌�ｼ縺梧ｨｩ髯舌ｒ謖√▲縺ｦ縺�繧九し繝ｼ繝舌�ｼ縺九ｉ蠢懃ｭ斐ｒ蜿嶺ｿ｡縺励↑縺九▲縺溘％縺ｨ繧呈э蜻ｳ縺励∪縺吶�� (marketplace.eclipse.org)
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:92)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:95)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:54)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:163)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:115)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:509)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:535)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:282)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:297)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:279)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:72)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2020-11-24 13:21:27.750
+!MESSAGE Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+java.net.UnknownHostException: 縺薙ｌ縺ｯ騾壼ｸｸ縲√�帙せ繝亥錐縺ｮ隗｣豎ｺ荳ｭ縺ｮ荳�譎ら噪縺ｪ繧ｨ繝ｩ繝ｼ縺ｧ縲√Ο繝ｼ繧ｫ繝ｫ 繧ｵ繝ｼ繝舌�ｼ縺梧ｨｩ髯舌ｒ謖√▲縺ｦ縺�繧九し繝ｼ繝舌�ｼ縺九ｉ蠢懃ｭ斐ｒ蜿嶺ｿ｡縺励↑縺九▲縺溘％縺ｨ繧呈э蜻ｳ縺励∪縺吶�� (marketplace.eclipse.org)
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:92)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:95)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:54)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:163)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:115)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:509)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:535)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:282)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:297)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:279)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:72)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2020-11-24 13:21:27.750
+!MESSAGE Cannot resolve host
+
+This is most often caused by a problem with your internet connection. Please check your internet connection and retry.
+!STACK 0
+java.net.UnknownHostException: 縺薙ｌ縺ｯ騾壼ｸｸ縲√�帙せ繝亥錐縺ｮ隗｣豎ｺ荳ｭ縺ｮ荳�譎ら噪縺ｪ繧ｨ繝ｩ繝ｼ縺ｧ縲√Ο繝ｼ繧ｫ繝ｫ 繧ｵ繝ｼ繝舌�ｼ縺梧ｨｩ髯舌ｒ謖√▲縺ｦ縺�繧九し繝ｼ繝舌�ｼ縺九ｉ蠢懃ｭ斐ｒ蜿嶺ｿ｡縺励↑縺九▲縺溘％縺ｨ繧呈э蜻ｳ縺励∪縺吶�� (marketplace.eclipse.org)
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:111)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.execute(HttpClientTransport.java:92)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.executeImpl(RequestTemplate.java:95)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:54)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.HttpClientTransport.stream(HttpClientTransport.java:102)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:68)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:163)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:115)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:509)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:535)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:282)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:297)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:279)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:72)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-11-24 13:21:27.753
+!MESSAGE marketplace.eclipse.org で http://marketplace.eclipse.org/category/free-tagging/fileExtension_FETCH_HEAD/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950 への接続に失敗しました。0 の再試行を開始しました
+!STACK 0
+java.net.UnknownHostException: marketplace.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2020-11-24 13:21:27.757
+!MESSAGE marketplace.eclipse.org で http://marketplace.eclipse.org/category/free-tagging/fileExtension_index/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950 への接続に失敗しました。0 の再試行を開始しました
+!STACK 0
+java.net.UnknownHostException: marketplace.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2020-11-24 13:21:28.001
+!MESSAGE File support discovery for FETCH_HEAD failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: リクエストを完了できません http://marketplace.eclipse.org/category/free-tagging/fileExtension_FETCH_HEAD/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950: 不明なホスト: http://marketplace.eclipse.org/category/free-tagging/fileExtension_FETCH_HEAD/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:198)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:115)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:509)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:535)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:282)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:297)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:279)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:72)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.eclipse.core.runtime.CoreException: 不明なホスト: http://marketplace.eclipse.org/category/free-tagging/fileExtension_FETCH_HEAD/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:35)
+	at org.eclipse.epp.internal.mpc.core.util.TransportFactory$1.stream(TransportFactory.java:285)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:129)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:163)
+	... 11 more
+Caused by: java.net.UnknownHostException: marketplace.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	... 1 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2020-11-24 13:21:28.002
+!MESSAGE リクエストを完了できません http://marketplace.eclipse.org/category/free-tagging/fileExtension_FETCH_HEAD/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950: 不明なホスト: http://marketplace.eclipse.org/category/free-tagging/fileExtension_FETCH_HEAD/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950
+!STACK 1
+org.eclipse.core.runtime.CoreException: 不明なホスト: http://marketplace.eclipse.org/category/free-tagging/fileExtension_FETCH_HEAD/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:35)
+	at org.eclipse.epp.internal.mpc.core.util.TransportFactory$1.stream(TransportFactory.java:285)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:129)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:163)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:115)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:509)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:535)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:282)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:297)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:279)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:72)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.net.UnknownHostException: marketplace.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	... 1 more
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1006 2020-11-24 13:21:28.002
+!MESSAGE 不明なホスト: http://marketplace.eclipse.org/category/free-tagging/fileExtension_FETCH_HEAD/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950
+!STACK 0
+java.net.UnknownHostException: marketplace.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2020-11-24 13:21:28.007
+!MESSAGE File support discovery for インデックス failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: リクエストを完了できません http://marketplace.eclipse.org/category/free-tagging/fileExtension_index/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950: 不明なホスト: http://marketplace.eclipse.org/category/free-tagging/fileExtension_index/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:198)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:115)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:509)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:535)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:282)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:297)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:279)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:72)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.eclipse.core.runtime.CoreException: 不明なホスト: http://marketplace.eclipse.org/category/free-tagging/fileExtension_index/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:35)
+	at org.eclipse.epp.internal.mpc.core.util.TransportFactory$1.stream(TransportFactory.java:285)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:129)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:163)
+	... 11 more
+Caused by: java.net.UnknownHostException: marketplace.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	... 1 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2020-11-24 13:21:28.007
+!MESSAGE リクエストを完了できません http://marketplace.eclipse.org/category/free-tagging/fileExtension_index/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950: 不明なホスト: http://marketplace.eclipse.org/category/free-tagging/fileExtension_index/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950
+!STACK 1
+org.eclipse.core.runtime.CoreException: 不明なホスト: http://marketplace.eclipse.org/category/free-tagging/fileExtension_index/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950
+	at org.eclipse.equinox.internal.p2.transport.ecf.RepositoryTransport.stream(RepositoryTransport.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.epp.internal.mpc.core.util.AbstractP2TransportFactory.invokeStream(AbstractP2TransportFactory.java:35)
+	at org.eclipse.epp.internal.mpc.core.util.TransportFactory$1.stream(TransportFactory.java:285)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.primaryFailed(FallbackTransportFactory.java:129)
+	at org.eclipse.epp.internal.mpc.core.util.FallbackTransportFactory$FallbackTransport.stream(FallbackTransportFactory.java:85)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:163)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:128)
+	at org.eclipse.epp.internal.mpc.core.service.RemoteMarketplaceService.processRequest(RemoteMarketplaceService.java:115)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.processSearchRequest(DefaultMarketplaceService.java:509)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:535)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.tagged(DefaultMarketplaceService.java:1)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService$2.doSearch(CachingMarketplaceService.java:282)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.performSearch(CachingMarketplaceService.java:297)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.tagged(CachingMarketplaceService.java:279)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:72)
+	at org.eclipse.epp.internal.mpc.ui.discovery.DiscoverFileSupportJob.run(DiscoverFileSupportJob.java:61)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.net.UnknownHostException: marketplace.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	... 1 more
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1006 2020-11-24 13:21:28.008
+!MESSAGE 不明なホスト: http://marketplace.eclipse.org/category/free-tagging/fileExtension_index/api/p?client=org.eclipse.epp.mpc.core&client.version=1.6.0.v20170614-1943&os=win32&ws=win32&nl=ja_JP&java.version=1.8.0_131&product=org.eclipse.epp.package.jee.product&product.version=4.7.0.I20170612-0950&runtime.version=3.13.0.v20170207-1030&platform.version=4.7.0.v20170612-0950
+!STACK 0
+java.net.UnknownHostException: marketplace.eclipse.org
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SESSION 2020-11-24 13:21:39.720 -----------------------------------------------
 eclipse.buildId=4.7.0.I20170612-0950
 java.version=1.8.0_131
 java.vendor=Oracle Corporation
@@ -426,28 +906,25 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-!ENTRY org.eclipse.core.resources 2 10035 2020-11-24 16:03:08.939
-!MESSAGE ワークスペースは以前のセッションで変更が保存されずに終了しました； 変更を回復するためにワークスペースをリフレッシュ中です。
-
-!ENTRY org.eclipse.ui 2 0 2020-11-24 16:03:09.298
+!ENTRY org.eclipse.ui 2 0 2020-11-24 13:21:43.424
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 16:03:09.298
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 13:21:43.424
 !MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
 
-!ENTRY org.eclipse.ui 2 0 2020-11-24 16:03:09.669
+!ENTRY org.eclipse.ui 2 0 2020-11-24 13:21:43.825
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 16:03:09.669
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 13:21:43.825
 !MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
 
-!ENTRY org.eclipse.jface 2 0 2020-11-24 16:03:10.926
+!ENTRY org.eclipse.jface 2 0 2020-11-24 13:21:45.056
 !MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
-!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-24 16:03:10.927
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-24 13:21:45.056
 !MESSAGE ALT+CTRL+Y の競合が発生しました:
 Binding(ALT+CTRL+Y,
 	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
 		Imports code to editor and removes it from the client recorder view,
 		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f1ea463,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@121b7a95,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -455,21 +932,904 @@ Binding(ALT+CTRL+Y,
 	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
 		,
 		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
-		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3a641f6,
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7aa62a90,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
-!ENTRY mergedoc.encoding 2 0 2020-11-24 16:03:13.774
-!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\卒業制作\卒業制作\WebContent\WEB-INF\managermenu.jsp.
-
-!ENTRY mergedoc.encoding 2 0 2020-11-24 16:03:13.779
-!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\卒業制作\卒業制作\WebContent\WEB-INF\managermenu.jsp.
-
-!ENTRY org.eclipse.core.net 4 0 2020-11-24 16:03:14.429
+!ENTRY org.eclipse.core.net 4 0 2020-11-24 13:21:48.785
 !MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
 
-!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-24 16:03:18.442
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-24 13:21:52.312
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+!SESSION 2020-11-24 13:41:41.307 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 13:41:45.008
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 13:41:45.008
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 13:41:45.408
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 13:41:45.408
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-24 13:41:46.728
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-24 13:41:46.728
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f4aec23,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@713c8cbb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-24 13:41:50.430
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-24 13:41:54.095
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 13:53:36.128
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\卒業制作\卒業制作\WebContent\WEB-INF\managermenu.jsp.
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 13:53:36.131
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\卒業制作\卒業制作\WebContent\WEB-INF\managermenu.jsp.
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 13:53:36.134
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\卒業制作\卒業制作\WebContent\WEB-INF\managermenu.jsp.
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 13:53:36.138
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\卒業制作\卒業制作\WebContent\WEB-INF\managermenu.jsp.
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 14:00:04.085
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 14:00:04.090
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 14:00:04.104
+!MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 14:00:04.128
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 14:00:04.128
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 14:00:04.137
+!MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2020-11-24 14:11:24.185
+!MESSAGE HTTP サーバー 'サービスが利用不可': http://download.eclipse.org/releases/oxygen/compositeContent.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 503.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2020-11-24 14:11:24.186
+!MESSAGE HttpComponents connection error response code 503.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2020-11-24 14:11:24.218
+!MESSAGE HTTP サーバー 'サービスが利用不可': http://download.eclipse.org/eclipse/updates/4.7/compositeContent.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 503.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2020-11-24 14:11:24.218
+!MESSAGE HttpComponents connection error response code 503.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2020-11-24 14:11:24.633
+!MESSAGE HTTP サーバー 'サービスが利用不可': http://download.eclipse.org/webtools/repository/neon/compositeContent.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 503.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2020-11-24 14:11:24.633
+!MESSAGE HttpComponents connection error response code 503.
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2020-11-24 14:11:33.663
+!MESSAGE Exception in update check thread
+!STACK 0
+java.lang.IllegalArgumentException: timeout value is negative
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:86)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-24 14:23:02.466
+!MESSAGE ブランチ失敗
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot lock C:\Users\ntb017\git\aa\.git\index. Ensure that no other process has an open file handle on the lock file C:\Users\ntb017\git\aa\.git\index.lock, then you may delete the lock file and retry.
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:119)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:171)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI.doCheckout(BranchOperationUI.java:143)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI.access$2(BranchOperationUI.java:133)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$CheckoutJob.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.eclipse.jgit.api.errors.JGitInternalException: Cannot lock C:\Users\ntb017\git\aa\.git\index. Ensure that no other process has an open file handle on the lock file C:\Users\ntb017\git\aa\.git\index.lock, then you may delete the lock file and retry.
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:331)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:115)
+	... 7 more
+Caused by: org.eclipse.jgit.errors.LockFailedException: Cannot lock C:\Users\ntb017\git\aa\.git\index. Ensure that no other process has an open file handle on the lock file C:\Users\ntb017\git\aa\.git\index.lock, then you may delete the lock file and retry.
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:251)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:328)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:294)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1232)
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:266)
+	... 8 more
+!SUBENTRY 1 org.eclipse.egit.core 4 0 2020-11-24 14:23:02.466
+!MESSAGE Cannot lock C:\Users\ntb017\git\aa\.git\index. Ensure that no other process has an open file handle on the lock file C:\Users\ntb017\git\aa\.git\index.lock, then you may delete the lock file and retry.
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Cannot lock C:\Users\ntb017\git\aa\.git\index. Ensure that no other process has an open file handle on the lock file C:\Users\ntb017\git\aa\.git\index.lock, then you may delete the lock file and retry.
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:331)
+	at org.eclipse.egit.core.op.BranchOperation$1.run(BranchOperation.java:115)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.egit.core.op.BranchOperation.execute(BranchOperation.java:171)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI.doCheckout(BranchOperationUI.java:143)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI.access$2(BranchOperationUI.java:133)
+	at org.eclipse.egit.ui.internal.branch.BranchOperationUI$CheckoutJob.run(BranchOperationUI.java:199)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: org.eclipse.jgit.errors.LockFailedException: Cannot lock C:\Users\ntb017\git\aa\.git\index. Ensure that no other process has an open file handle on the lock file C:\Users\ntb017\git\aa\.git\index.lock, then you may delete the lock file and retry.
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:251)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:328)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:294)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1232)
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:266)
+	... 8 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-11-24 14:43:17.244
+!MESSAGE There is no handler to execute for command org.eclipse.egit.ui.RepositoriesViewOpen
+!STACK 0
+org.eclipse.core.commands.NotHandledException: There is no handler to execute for command org.eclipse.egit.ui.RepositoriesViewOpen
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:507)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:390)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:377)
+	at org.eclipse.egit.ui.internal.repository.RepositoriesView.executeOpenCommand(RepositoriesView.java:491)
+	at org.eclipse.egit.ui.internal.repository.RepositoriesView.executeOpenCommandWithConfirmation(RepositoriesView.java:484)
+	at org.eclipse.egit.ui.internal.repository.RepositoriesView.access$8(RepositoriesView.java:463)
+	at org.eclipse.egit.ui.internal.repository.RepositoriesView$11.doubleClick(RepositoriesView.java:426)
+	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:831)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil.lambda$0(JFaceUtil.java:44)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
+	at org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:828)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1459)
+	at org.eclipse.ui.navigator.CommonViewer.handleDoubleSelect(CommonViewer.java:445)
+	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1258)
+	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:249)
+	at org.eclipse.jface.util.OpenStrategy.access$0(OpenStrategy.java:247)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:306)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4428)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4238)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3817)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+!SESSION 2020-11-24 15:19:28.095 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 15:19:33.672
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 15:19:33.672
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 15:19:34.088
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 15:19:34.088
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-24 15:19:35.363
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-24 15:19:35.363
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7680beac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7053a864,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-24 15:19:39.833
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-24 15:19:43.643
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:25:05.835
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:25:05.836
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:25:05.846
+!MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:25:05.870
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:25:05.871
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:25:05.882
+!MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2020-11-24 15:36:42.494
+!MESSAGE Exception in update check thread
+!STACK 0
+java.lang.IllegalArgumentException: timeout value is negative
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:86)
+!SESSION 2020-11-24 15:39:27.415 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 15:39:34.109
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 15:39:34.109
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 15:39:34.508
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 15:39:34.508
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-24 15:39:35.793
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-24 15:39:35.793
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@282079b9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3d6c7152,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-24 15:39:39.552
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-24 15:39:43.384
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:41:22.533
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:41:22.537
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:41:22.554
+!MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:41:22.579
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:41:22.580
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:41:22.590
+!MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
+!SESSION 2020-11-24 15:43:44.090 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 15:43:47.728
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 15:43:47.728
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 15:43:48.100
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 15:43:48.100
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-24 15:43:49.385
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-24 15:43:49.385
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2bfe4df9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f466207,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-24 15:43:53.635
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-24 15:43:57.487
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:47:26.713
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:47:26.714
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:47:26.725
+!MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:47:26.743
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:47:26.744
+!MESSAGE 重複テンプレート ID: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-11-24 15:47:26.754
+!MESSAGE 重複テンプレート ID: 'zigen.plugin.db.template.sql.case'
+!SESSION 2020-11-24 15:49:19.186 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 15:49:22.811
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 15:49:22.811
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 15:49:23.234
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 15:49:23.234
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-24 15:49:24.507
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-24 15:49:24.507
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2bfe4df9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f466207,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-24 15:49:28.422
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-24 15:49:31.931
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 15:55:36.610
+!MESSAGE リソース '/卒業制作/WebContent/managerMenu.jsp' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 15:55:36.610
+!MESSAGE リソース '/卒業制作/WebContent/managerMenu.jsp' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 15:55:36.612
+!MESSAGE リソース '/卒業制作/WebContent/managerMenu.jsp' が存在しません。
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 15:55:36.613
+!MESSAGE リソース '/卒業制作/WebContent/managerMenu.jsp' が存在しません。
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2020-11-24 16:00:54.683
+!MESSAGE Exception in update check thread
+!STACK 0
+java.lang.IllegalArgumentException: timeout value is negative
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:86)
+!SESSION 2020-11-24 16:02:19.283 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 16:02:31.277
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 16:02:31.277
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 16:02:31.679
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 16:02:31.679
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-24 16:02:32.856
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-24 16:02:32.856
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4e6add8d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23974cac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-24 16:02:35.751
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-24 16:02:39.153
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+!SESSION 2020-11-24 16:10:06.013 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 16:10:33.452
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 16:10:33.452
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 16:10:33.873
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 16:10:33.873
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-24 16:10:35.096
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-24 16:10:35.096
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@85104d6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56e9126f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-24 16:10:38.173
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-24 16:10:41.667
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.updatechecker 4 0 2020-11-24 16:22:22.753
+!MESSAGE Exception in update check thread
+!STACK 0
+java.lang.IllegalArgumentException: timeout value is negative
+	at java.lang.Thread.sleep(Native Method)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:86)
+!SESSION 2020-11-24 17:11:09.312 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 17:11:12.937
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 17:11:12.937
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-24 17:11:13.336
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-24 17:11:13.336
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-24 17:11:14.624
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-24 17:11:14.624
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@66450129,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14f1545c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 17:11:17.478
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\workspacePBL\卒業制作\WebContent\WEB-INF\jsp\signupdone.jsp.
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 17:11:17.482
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\workspacePBL\卒業制作\WebContent\WEB-INF\jsp\signupdone.jsp.
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 17:11:17.487
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\workspacePBL\卒業制作\WebContent\WEB-INF\jsp\signupdone.jsp.
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 17:11:17.491
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\workspacePBL\卒業制作\WebContent\WEB-INF\jsp\signupdone.jsp.
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-24 17:11:18.185
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-24 17:11:21.855
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.egit.core 4 0 2020-11-24 17:14:12.375
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '../../.git', absolute path: 'C:/Users/ntb017/Desktop/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:720)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:683)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:647)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:630)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
+	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
+	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:334)
+	at org.eclipse.egit.ui.Activator$ResourceRefreshJob.run(Activator.java:492)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 17:23:43.474
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\workspacePBL\卒業制作\WebContent\WEB-INF\jsp\signup.jsp.
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 17:23:43.477
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\workspacePBL\卒業制作\WebContent\WEB-INF\jsp\signup.jsp.
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 17:23:43.481
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\workspacePBL\卒業制作\WebContent\WEB-INF\jsp\signup.jsp.
+
+!ENTRY mergedoc.encoding 2 0 2020-11-24 17:23:43.486
+!MESSAGE ファイルが見つかりません: C:\Users\ntb017\git\aa\workspacePBL\卒業制作\WebContent\WEB-INF\jsp\signup.jsp.
+!SESSION 2020-11-25 09:06:01.392 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-25 09:06:05.812
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-25 09:06:05.812
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-25 09:06:06.301
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-25 09:06:06.301
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-25 09:06:07.797
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-25 09:06:07.797
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56e9126f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4e773b8a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-25 09:06:10.863
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-25 09:06:15.307
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+!SESSION 2020-11-25 09:10:49.083 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2020-11-25 09:10:53.734
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-25 09:10:53.734
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.ui 2 0 2020-11-25 09:10:54.204
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-11-25 09:10:54.204
+!MESSAGE Commands should really have a category: plug-in='net.sf.eclipsecs.ui', id='CheckstylePlugin.PurgeCaches', categoryId='net.sf.eclipsecs'
+
+!ENTRY org.eclipse.jface 2 0 2020-11-25 09:10:55.600
+!MESSAGE キーバインドの競合が発生しました。 通常のアクセラレーター操作を妨げる可能性があります。
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-25 09:10:55.600
+!MESSAGE ALT+CTRL+Y の競合が発生しました:
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.swtbot.generator.client.commands.import.code,SWTBot コードのインポート,
+		Imports code to editor and removes it from the client recorder view,
+		Category(org.eclipse.core.commands.categories.autogenerated,カテゴリーなし,自動生成コマンドかカテゴリーを持たないコマンド,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@13e6ab86,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+Y,
+	ParameterizedCommand(Command(org.eclipse.team.svn.revision.graph.command.ShowRevisionGraphCommand,改訂グラフの表示...,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f5d7091,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.net 4 0 2020-11-25 09:10:58.591
+!MESSAGE WinHttp.DetectAutoProxyConfigUrl for wpad failed with error 'vLV̎©®\¬ ' #12180.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-11-25 09:11:02.603
 !MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; バージョン: 2.0.5.v20170613-1207
 !STACK 0
 com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
