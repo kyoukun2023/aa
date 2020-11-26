@@ -16,7 +16,7 @@
 			<th>授業科目/クラス</th>
 		</tr>
 		<tr>
-			<td><a href="/卒業制作/WebContent/SenseiTouroku.jsp?btn=rink">教員登録画面</a></td>
+			<td><a href="/卒業制作/SenseiTourokuServlet?btn=rink">教員登録画面</a></td>
 			<td><a href="/卒業制作/SenseiTourokuServlet?btn=rink">担当科目管理画面</a></td>
 			<td>学生登録画面</td>
 			<td>授業科目登録画面</td>

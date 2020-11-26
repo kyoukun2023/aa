@@ -1,7 +1,2 @@
 INDEX VERSION 1.4+C:\Users\ntb017\git\aa\ë≤ã∆êßçÏ\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1659744975.index
-4218264124.index
-3741743375.index
-4202988058.index
 1919637342.index
-3537250360.index
