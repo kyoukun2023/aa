@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./resource/css/main.css" />
 <title>Insert title here</title>
 </head>
 <body>
@@ -18,10 +19,10 @@
 			</tr>
 		</table>
 	<p>
-		<input type="checkbox" name="riyu" value="1" checked="checked">教員
-		<input type="checkbox" name="riyu" value="2">AD
-		<input type="checkbox" name="riyu" value="3">教員/AD
-		<input type="checkbox" name="riyu" value="3">管理者
+		<input type="radio" name="riyu" value="1" checked="checked">教員
+		<input type="radio" name="riyu" value="2">AD
+		<input type="radio" name="riyu" value="3">教員/AD
+		<input type="radio" name="riyu" value="3">管理者
 	</p>
 	<input type="button" onclick="history.back()"  value="戻る">
 	<input type="button" value="登録">
