@@ -23,7 +23,7 @@
 		<input type="checkbox" name="riyu" value="3">教員/AD
 		<input type="checkbox" name="riyu" value="3">管理者
 	</p>
-	<input type="button" value="戻る">
+	<input type="button" onclick="history.back()"  value="戻る">
 	<input type="button" value="登録">
 </body>
 </html>
