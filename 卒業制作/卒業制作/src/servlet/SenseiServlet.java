@@ -35,6 +35,7 @@ public class SenseiServlet extends HttpServlet {
 		
 		request.setCharacterEncoding("UTF-8");
 		
+		
 
 		RequestDispatcher dispatcher=request.getRequestDispatcher("/WEB-INF/jsp/senseiTouroku.jsp");
 		dispatcher.forward(request,response);
