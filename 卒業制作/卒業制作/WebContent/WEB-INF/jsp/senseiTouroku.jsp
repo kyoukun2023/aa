@@ -19,10 +19,10 @@
 			</tr>
 		<tr>
 			<td>
-		<input type="radio" name="riyu" value="1" checked="checked" class="teachar">教員
-		<input type="radio" name="riyu" value="2">AD
-		<input type="radio" name="riyu" value="3">教員/AD
-		<input type="radio" name="riyu" value="4">管理者
+		<input type="radio" name="teacher" value="1" checked="checked" class="teachar">教員
+		<input type="radio" name="AD" value="2">AD
+		<input type="radio" name="teachAD" value="3">教員/AD
+		<input type="radio" name="manager" value="4">管理者
 			</td>
 		</tr>
 		</table>
