@@ -32,8 +32,9 @@ public class SenseiServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-
-
+		
+		request.setCharacterEncoding("UTF-8");
+		
 
 		RequestDispatcher dispatcher=request.getRequestDispatcher("/WEB-INF/jsp/senseiTouroku.jsp");
 		dispatcher.forward(request,response);

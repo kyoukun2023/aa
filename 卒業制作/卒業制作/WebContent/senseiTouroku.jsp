@@ -17,13 +17,15 @@
 		<tr>
 			<td>教員名<input type="text" name="sensei"></td>
 			</tr>
-		</table>
-	<p>
-		<input type="radio" name="riyu" value="1" checked="checked">教員
+		<tr>
+			<td>
+		<input type="radio" name="riyu" value="1" checked="checked" class="teachar">教員
 		<input type="radio" name="riyu" value="2">AD
 		<input type="radio" name="riyu" value="3">教員/AD
-		<input type="radio" name="riyu" value="3">管理者
-	</p>
+		<input type="radio" name="riyu" value="4">管理者
+			</td>
+		</tr>
+		</table>
 	<input type="button" onclick="history.back()"  value="戻る">
 	<input type="button" value="登録">
 </body>
