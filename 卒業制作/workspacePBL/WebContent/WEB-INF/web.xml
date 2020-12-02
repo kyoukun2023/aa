@@ -9,4 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>SignupServlet</display-name>
+    <servlet-name>SignupServlet</servlet-name>
+    <servlet-class>servlet.SignupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignupServlet</servlet-name>
+    <url-pattern>/SignupServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

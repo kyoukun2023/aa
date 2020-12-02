@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;}
+
+.new{
+   border: 2px solid black;
+   width: 650px;
+   height: 100px;
+   padding: 4px;
+   font-size: 15px;
+   margin: 20px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+
+}
+
+#main{
+   width: 700px;
+}
