@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class TeacherDAO {
+public class SenseiDAO {
 	public void newTeacher(String teacherName,String teacherID,String loginPass){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
