@@ -16,7 +16,7 @@
 			<th>授業科目/クラス</th>
 		</tr>
 		<tr>
-			<td><a href="/卒業制作/SenseiServlet" id="sentouroku">教員登録画面</a></td>
+			<td><a href="/卒業制作/SenseiServlet">教員登録画面</a></td>
 			<td>担当科目管理画面</td>
 			<td>学生登録画面</td>
 			<td>授業科目登録画面</td>
