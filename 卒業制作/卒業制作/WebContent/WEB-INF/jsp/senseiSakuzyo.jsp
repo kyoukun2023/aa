@@ -14,8 +14,11 @@
 				<th>教員名</th>
 				<th>役割</th>
 			</tr>
+			<tr>
+
+			</tr>
 		</table>
 	<input type="button" onclick="history.back()"  value="戻る">
-	<input type="button" value="削除">
+	<input type="submit" value="削除">
 </body>
 </html>
